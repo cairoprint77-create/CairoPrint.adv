@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .services .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 10px;
+        }
+
+        .services .card i {
+            font-size: 32px;
+            color: #4f46e5;
+            transition: 0.3s;
+        }
+
+        .services .card p {
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .services .card:hover i {
+            transform: translateY(-5px);
+        }
+
+        /* CONTACT PHONES */
+        .contact-phones {
+            padding: 60px 20px;
+            text-align: center;
+            background: #f9fafb;
+        }
+
+        .contact-phones h2 {
+            margin-bottom: 30px;
+            font-size: 28px;
+            color: #111827;
+        }
+
+        .contact-phones .phones {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .phone-card {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 25px;
+            background: white;
+            border-radius: 15px;
+            text-decoration: none;
+            color: #111827;
+            font-weight: 600;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .phone-card i {
+            color: #4f46e5;
+            font-size: 18px;
+        }
+
+        .phone-card:hover {
+            transform: translateY(-5px);
+            background: #4f46e5;
+            color: white;
+        }
+
+        .phone-card:hover i {
+            color: white;
+        }
+
+        /* زر الوضع الليلي العائم المضاف */
+        #mode {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: #4f46e5;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+        #mode:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<head>
+    <title>كايرو برنت | لاستيراد مواد الدعاية والإعلان</title>
+
+<body>
+
+    <button id="mode" title="تبديل الوضع">🌙</button>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close" id="closeLightbox">&times;</span>
+        <img id="lightboxImg" src="" alt="عرض الصورة">
+    </div>
+
+    <header></header>
+
+    <section class="hero">
+        <div class="hero-content"></div>
+        <img src="images/timeline.jpg" class="hero-img" alt="hero">
+    </section>
+
+    <section class="services">
+        <h2>خدماتنا</h2>
+        <div class="cards">
+            <div class="card">
+                <i class="fa-solid fa-pen-nib"></i>
+                <p>تصميم جرافيك</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-print"></i>
+                <p>طباعة بانر</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <p>فايبر ليزر</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-flag"></i>
+                <p>طباعة أعلام</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-trophy"></i>
+                <p>دروع تكريمية</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>معرض المنتجات</h2>
+        <div class="product-grid">
+            <div class="product-card"><div class="img-box"><img src="images/دروع تكريم كريستال.jpg" alt="منتج"></div><h3>دروع تكريم كريستال</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/دروع تكريم خشب.jpg" alt="منتج"></div><h3>دروع تكريم خشبية</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/دروع تكريم طبق.jpg" alt="منتج"></div><h3>دروع تكريم أطباق</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/دروع تكريم قطيفة.jpg" alt="منتج"></div><h3>دروع تكريم قطيفة</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/روب و وشاح وكاب تخرج.jpg" alt="منتج"></div><h3>روب و وشاح وكاب تخرج</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/ميدالية بطولة.jpg" alt="منتج"></div><h3>ميدالية بطولة</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/Untitled-2.jpg" alt="منتج"></div><h3>ميداليات مفتاح</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/دبوس بدلة.jpg" alt="منتج"></div><h3>دبوس بدلة</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/نيم تاج.jpg" alt="منتج"></div><h3>نيم تاج</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/بوتون بادج.jpg" alt="منتج"></div><h3>بوتون بادج</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/مج ابيض وسحري.jpg" alt="منتج"></div><h3>مجّ ابيض - مجّ سحري - علب مجّات</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/مج حراري.jpg" alt="منتج"></div><h3>مجّ حراري</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/زمزمية.jpg" alt="منتج"></div><h3>زمزمية</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/لينيارد وكروت.jpg" alt="منتج"></div><h3>لينيارد - كروت</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/باد ماوس.jpg" alt="منتج"></div><h3>باد ماوس</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/تيشرتات.jpg" alt="منتج"></div><h3>تيشرت</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/كاب.jpg" alt="منتج"></div><h3>كاب</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/فيست.jpg" alt="منتج"></div><h3>فيست</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/شنط قماش.jpg" alt="منتج"></div><h3>شنط قماش</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/شنط كرتون.jpg" alt="منتج"></div><h3>شنط كرتون</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/جميع أنواع الأعلام (ريشا-مكتب).jpg" alt="منتج"></div><h3>جميع أنواع الأعلام - ريشا -مكتب</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/رول اب - بوب اب - ستاندات.jpg" alt="منتج"></div><h3>رول اب - بوب اب - ستاند اب</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/طباعة بانر - فينيل - فليكس.jpg" alt="منتج"></div><h3>طباعة بانر - فينيل - فليكس</h3></div>
+            <div class="product-card"><div class="img-box"><img src="images/حفر ليزر على جميع الخامات.jpg" alt="منتج"></div><h3>حفر ليزر علي جميع الخامات</h3></div>
+        </div>
+    </section>
+
+    <div class="marquee">
+        <div class="marquee-content">
+            🎉 عروض خاصة على الدروع التذكارية - خصومات تصل إلى 30% 🔥
+            &nbsp;&nbsp;&nbsp;
+            🚀 أسرع خدمة طباعة في مصر - جودة عالية بأسعار منافسة
+            &nbsp;&nbsp;&nbsp;
+            📞 اطلب الآن عبر واتساب واحصل على تصميم مجاني!
+        </div>
+    </div>
+
+    <section class="extra-products">
+        <h2>أعمالنا</h2>
+        
+        <div class="product-grid">
+            <div class="product-card"><div class="img-box"><img src="images/فوادفون.jpeg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/قوس.jpeg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/مستطيل ليزر.jpeg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/درع كريستال علبة خشب.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/+.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/درع كريستال ..jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/درع طبق جلد.JPG" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/درع قطيفة 1.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/درع قطيفة2.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/درع خشب مصري.jpeg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/درع خشب مصري 1.jpeg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/ستاند+.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/ستاند.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/ستاند..jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/ستاند...jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/ستاند 1.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/ستاند2.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/5d63c666-04a0-466e-aabf-0872b2b624db.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/ستاند كريستال.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/ستاند كريستال.jpg 3.png" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/ستاند كريستال.jpg 4.png" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/ستاند معدن.jpg" alt="عمل"></div></div>
+        </div>
+
+        <div class="product-grid" style="margin-top: 20px;">
+            <div class="product-card"><div class="img-box"><img src="images/اوسكار نجمتين.jpeg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/اوسكار نجمة.jpeg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/اوسكار1.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/اوسكار2.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/IMG_1144.JPG" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/IMG_1146.JPG" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/IMG_1150.JPG" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/ميدالية بطولة.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/27c6d48f-7c91-464e-81a8-d65231eb3f48.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/عا.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/نيم تاج معدن.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/نيم تاج فبر1.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/256.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/دبوس زنكو 1.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/دبوس زنكو3.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/بوتون بلدج.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/باد ماوس.jpg 1.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/IMG20260427221834.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/IMG20260427221906.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/كاب 2.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/كاب صيدين.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/شنط دك.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/شنطة وتر.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/شماسة.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/مجات بيضه.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/1مج سحري.png" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/مج حبل.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/مج ديجيتال 1.jpeg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/زم.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/مسطرة حفر.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/قلم حفر2.jpeg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/بوكس.jpeg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/ستاند موبايل.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/اى دى.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/اى دى1.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/اى دى2.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/لينيارد1.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/لينيارد2.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/اى دى 5.jpg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/شريط.jpeg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/شريط1.jpeg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/كارت.jpeg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/كارت1.jpeg" alt="عمل"></div></div>
+            <div class="product-card"><div class="img-box"><img src="images/شريط 7.jpg" alt="عمل"></div></div>
+        </div>
+    </section>
+
+    <section class="contact-phones">
+        <h2>📞 تواصل معنا</h2>
+        <div class="phones">
+            <a href="tel:+201019317233" class="phone-card">
+                <i class="fa-solid fa-phone"></i>
+                <span class="phone-number">01019317233</span>
+            </a>
+            <a href="tel:+201206513116" class="phone-card">
+                <i class="fa-solid fa-phone"></i>
+                <span class="phone-number">01206513116</span>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Cairo Print Agency
+    </footer>
+
+    <div class="social-buttons">
+        <a href="https://wa.me/201158449833" class="social whatsapp" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/cairo.print.adv" class="social instagram" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://web.facebook.com/cairo.print7" class="social facebook" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.tiktok.com/@cairo.print.adv" class="social tiktok" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+    </div>
+
+    <script>
+        const btn = document.getElementById("mode");
+        if (btn) {
+            btn.onclick = () => {
+                document.body.classList.toggle("dark");
+                btn.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+            };
+        }
+    </script>
+    
+    <script>
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightboxImg");
+        const closeBtn = document.getElementById("closeLightbox");
+
+        // تشغيل ميزة فتح الصور عند الضغط لكل الكروت في معرض المنتجات وأعمالنا
+        document.querySelectorAll(".product-card img").forEach(img => {
+            img.addEventListener("click", () => {
+                lightbox.style.display = "flex";
+                lightboxImg.src = img.src;
+            });
+        });
+
+        closeBtn.addEventListener("click", () => {
+            lightbox.style.display = "none";
+        });
+
+        lightbox.addEventListener("click", (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = "none";
+            }
+        });
+    </script>
+    
+    <script>
+        document.addEventListener("contextmenu", e => e.preventDefault());
+
+        document.querySelectorAll("img").forEach(img => {
+            img.setAttribute("draggable", "false");
+        });
+    </script>
+
+</body>
+</html>
